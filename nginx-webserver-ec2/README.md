@@ -15,3 +15,4 @@ AWS Terraform provider version is locked with `5.45.0` version.
 
 ## References:
 - [Amazon EC2 Ubuntu AMI Locator](https://cloud-images.ubuntu.com/locator/ec2/)
+- [CentOS AWS AMI Cloud Images](https://www.centos.org/download/aws-images/)
