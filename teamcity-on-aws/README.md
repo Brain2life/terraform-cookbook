@@ -1,5 +1,7 @@
 # Deploy TeamCity server on AWS
 
+![](../img/teamcity_logo.png)
+
 This template deploys TeamCity server and two separate machines with build agents installed.
 
 - By default the setup uses the `t3.medium` based EC2 instances with Ubuntu 20.04 Focal Fossa amd64 based OS.
@@ -20,8 +22,12 @@ For more information
 
 TeamCity server installed via `user_data` script. For more information about installation, see "[Install TeamCity on Linux or MacOS](https://www.jetbrains.com/help/teamcity/install-teamcity-server-on-linux-or-macos.html)"
 
-## Build agent installation
+## Build agent installation and configuration
 
 Build agents are run on separate EC2 instance machines via Docker containers. For more information, see [Agent Docker Images](https://www.jetbrains.com/help/teamcity/agent-docker-images.html). 
 
 For more information about agent installation option, see [Install TeamCity agent](https://www.jetbrains.com/help/teamcity/install-teamcity-agent.html)
+
+TeamCity agents can be connected to the TeamCity server via Agent Push option. For more information, see [Install via Agent Push](https://www.jetbrains.com/help/teamcity/install-teamcity-agent.html#Install+via+Agent+Push)
+
+For agent configuration, see [Start TeamCity Agent](https://www.jetbrains.com/help/teamcity/start-teamcity-agent.html)
