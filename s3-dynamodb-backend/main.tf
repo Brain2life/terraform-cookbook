@@ -40,7 +40,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "default" {
 # Enable logging for the S3 bucket to monitor and track access to your Terraform state
 resource "aws_s3_bucket_logging" "terraform_state_logging" {
   bucket        = aws_s3_bucket.terraform_state.id
-  target_bucket = "s3-bucket-state"
+  target_bucket = "s3-bucket-state-logs"
   target_prefix = "log/"
 }
 
