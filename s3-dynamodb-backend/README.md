@@ -7,7 +7,7 @@ The given template configures AWS S3 backend to store Terraform state and sets A
 The template sets the following configurations:
 - Enable S3 bucket versioning
 - Enable default server-side encryption with AES256
-- Enable S3 bucket logging to monitor the access to the state file
+- Enable S3 bucket logging to monitor the access to the state file. For storing logs use separate S3 bucket.
 - Enable S3 Object locking to prevent even versioned objects from being deleted before a retention period
 - Disable public access to S3 bucket
 - Prevent accidental deletion of S3 bucket
