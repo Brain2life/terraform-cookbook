@@ -5,6 +5,7 @@ provider "aws" {
 # Create S3 bucket for terraform state
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "s3-bucket-state"
+  object_lock_enabled = true
 
   # Prevent accidental deletion of this S3 bucket. Set value to 'true'
   lifecycle {
