@@ -1,3 +1,3 @@
 creation_rules:
-    # AWS KMS key for encryption and decription
+    # AWS KMS key for encryption and decryption
     - kms: "arn:aws:kms:us-east-1:533267306038:key/100345dd-9530-44ee-80e7-d49469f38a7c"
