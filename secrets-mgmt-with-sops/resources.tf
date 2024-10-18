@@ -3,7 +3,7 @@ resource "aws_db_instance" "default" {
   engine               = "mysql"
   engine_version       = "8.0"
   instance_class       = "db.t3.micro"
-  db_name                 = var.db_name
+  db_name              = var.db_name
   username             = data.sops_file.db_credentials.data["db_username"]
   password             = data.sops_file.db_credentials.data["db_password"]
   parameter_group_name = "default.mysql8.0"
