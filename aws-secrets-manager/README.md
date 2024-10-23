@@ -5,7 +5,7 @@
 Secrets Manager uses 256-bit Advanced Encryption Standard (AES) symmetric data keys to encrypt secret values. For more information, see [Secret encryption and decryption in AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/security-encryption.html).
 
 **NOTE**  
-AWS Secrets Manager is paid service. For more information, see [AWS Secrets Manager Pricing](https://aws.amazon.com/secrets-manager/pricing/)
+AWS Secrets Manager is a paid service. For more information, see [AWS Secrets Manager Pricing](https://aws.amazon.com/secrets-manager/pricing/)
 
 ## Overview
 
