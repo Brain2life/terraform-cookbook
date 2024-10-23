@@ -7,3 +7,4 @@
 - [TeamCity deployed on AWS](./teamcity-on-aws/)
 - [Terraform remote state S3 backend and DynamoDB for state locking](./s3-dynamodb-backend/)
 - [Use open-source SOPS tool to handle sensitive values in Terraform code](./secrets-mgmt-with-sops/)
+- [Use AWS Secrets Manager to handle sensitive values in Terraform code](./aws-secrets-manager/)
