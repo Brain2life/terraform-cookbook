@@ -15,6 +15,7 @@ This template uses random secrets generation when you deploy IaC help you protec
 
 1. Through Terraform, use AWS Secrets Manager to generate a random password secret.
 2. Terraform uses this random password secret, which is stored in AWS Secrets Manager, to access the database.
+3. The username and database name values are also stored in AWS Secrets Manager and supplied as a variable inputs during `terraform apply` command.
 
 **NOTE**  
 **Sensitive data is visible in plain text in the Terraform state file**. To help protect sensitive data, store the Terraform state file in the remote backend with encryption enabled at-rest and in-transit. For example, use AWS S3 remote backend and DynamoDB table for state locking. For more information, see [S3 DynamoDB Backend](../s3-dynamodb-backend/)
