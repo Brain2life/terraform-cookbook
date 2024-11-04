@@ -3,7 +3,7 @@
 This project provides example of how you can use the AWS Systems Manager Session Manager to securely connect to an Amazon Elastic Compute Cloud (Amazon EC2) bastion host without using any long-lived SSH keys.
 
 ## Architecture
-![Architecture of a private EC2 instance managed by SSM](../../img/diagram-ssm.png)
+![Architecture of a private EC2 instance managed by SSM](../img/diagram-ssm.png)
 
 ## Overview
 
