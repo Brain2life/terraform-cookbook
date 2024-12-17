@@ -11,3 +11,4 @@
 - [Example of making Remote Procedure Call to a service running on a remote EC2 instance](./example-rpc-call-to-ec2/)
 - [Use AWS SSM Session Manager to connect to EC2 instance in private subnet](./aws-ssm-ec2-connect/)
 - [Provision AWS Client VPN to access private resources in VPC](./aws-client-vpn/)
+- [Provision NAT instance for non-prod workloads](./nat-instance-setup-for-nonprod/)
