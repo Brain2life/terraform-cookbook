@@ -161,6 +161,9 @@ Ping `google.com`:
 ping google.com
 ```
 
+**NOTE**  
+NAT configuration is done via EC2 user script `configure_nat.sh`. For more information, see [Create NAT AMI](https://docs.aws.amazon.com/vpc/latest/userguide/work-with-nat-instances.html#create-nat-ami)
+
 ## References
 
 - [AWS Docs: NAT instances](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html)
