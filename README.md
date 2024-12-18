@@ -12,3 +12,4 @@
 - [Use AWS SSM Session Manager to connect to EC2 instance in private subnet](./aws-ssm-ec2-connect/)
 - [Provision AWS Client VPN to access private resources in VPC](./aws-client-vpn/)
 - [Provision NAT instance for non-prod workloads](./nat-instance-setup-for-nonprod/)
+- [Example setup of AWS NAT Gateway with high availability](./aws-highly-available-nat-gateway-setup/)
