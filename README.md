@@ -2,7 +2,7 @@
 
 ![](./img/terraform-logo.png)
 
-## Table of contents:
+## Projects:
 - [Deploy single EC2 instance with SSH keys generated and NGINX web server installed](./nginx-webserver-ec2/)
 - [TeamCity deployed on AWS](./teamcity-on-aws/)
 - [Terraform remote state S3 backend and DynamoDB for state locking](./s3-dynamodb-backend/)
