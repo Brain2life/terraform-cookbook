@@ -19,3 +19,4 @@ DNS entries and SaaS features.
 - [Provision NAT instance for non-prod workloads](./nat-instance-setup-for-nonprod/)
 - [Example setup of AWS NAT Gateway with high availability](./aws-highly-available-nat-gateway-setup/)
 - [Basics of AWS NACLs and Securuty Groups](./aws-nacl-basics/)
+- [EKS with Managed Node Groups](./eks-with-managed-node-group/)
