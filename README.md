@@ -7,7 +7,7 @@ reuse, and share. You can then use a consistent workflow to provision and manage
 Terraform can manage low-level components like compute, storage, and networking resources, as well as high-level components like 
 DNS entries and SaaS features.
 
-## Templates
+## Recipes
 - [Deploy single EC2 instance with SSH keys generated and NGINX web server installed](./nginx-webserver-ec2/)
 - [TeamCity deployed on AWS](./teamcity-on-aws/)
 - [Terraform remote state S3 backend and DynamoDB for state locking](./s3-dynamodb-backend/)
