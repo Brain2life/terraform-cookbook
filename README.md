@@ -7,10 +7,7 @@ reuse, and share. You can then use a consistent workflow to provision and manage
 Terraform can manage low-level components like compute, storage, and networking resources, as well as high-level components like 
 DNS entries and SaaS features.
 
-<h2>
-  <img src="./img/aws_logo.png" alt="AWS Logo" style="height: 1.2em; vertical-align: middle; margin-right: 8px;">
-  Recipes
-</h2>
+## Recipes
 
 - [Deploy single EC2 instance with SSH keys generated and NGINX web server installed](./nginx-webserver-ec2/)
 - [TeamCity deployed on AWS](./teamcity-on-aws/)
