@@ -7,7 +7,11 @@ reuse, and share. You can then use a consistent workflow to provision and manage
 Terraform can manage low-level components like compute, storage, and networking resources, as well as high-level components like 
 DNS entries and SaaS features.
 
-## Recipes
+<h2>
+  <img src="./img/aws_logo.png" alt="AWS Logo" style="height: 1.2em; vertical-align: middle; margin-right: 8px;">
+  Recipes
+</h2>
+
 - [Deploy single EC2 instance with SSH keys generated and NGINX web server installed](./nginx-webserver-ec2/)
 - [TeamCity deployed on AWS](./teamcity-on-aws/)
 - [Terraform remote state S3 backend and DynamoDB for state locking](./s3-dynamodb-backend/)
@@ -20,3 +24,4 @@ DNS entries and SaaS features.
 - [Example setup of AWS NAT Gateway with high availability](./aws-highly-available-nat-gateway-setup/)
 - [Basics of AWS NACLs and Securuty Groups](./aws-nacl-basics/)
 - [EKS with Managed Node Groups](./eks-with-managed-node-group/)
+- [Provision Standard Type of VPC for EKS without using modules](./standard-vpc-for-eks/)
