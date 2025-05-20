@@ -22,3 +22,4 @@ DNS entries and SaaS features.
 - [Basics of AWS NACLs and Securuty Groups](./aws-nacl-basics/)
 - [EKS with Managed Node Groups](./eks-with-managed-node-group/)
 - [Provision Standard Type of VPC for EKS without using modules](./standard-vpc-for-eks/)
+- [Provision EKS with Managed Node Groups without using modules](./eks-cluster-without-module/)
