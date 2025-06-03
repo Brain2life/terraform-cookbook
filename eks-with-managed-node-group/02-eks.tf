@@ -1,6 +1,7 @@
-##########################################################
+##############################################################################
 # EKS Cluster with Managed Node Groups
-##########################################################
+# https://registry.terraform.io/modules/terraform-aws-modules/eks/aws/latest
+##############################################################################
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 20.35.0"
@@ -26,7 +27,7 @@ module "eks" {
 
   # EKS Managed Node Group(s)
   eks_managed_node_groups = {
-    example = {
+    workers = {
       # Starting on 1.30, AL2023 is the default AMI type for EKS managed node groups
       ami_type       = "AL2023_x86_64_STANDARD"
       instance_types = ["t3.small"]
