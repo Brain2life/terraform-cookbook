@@ -8,7 +8,7 @@ In short: **Managed Node Group** = AWS manages the EC2 nodes (your worker nodes)
 
 ---
 
-### ✅ Key Features
+### Key Features
 
 | Feature                         | Explanation |
 |----------------------------------|-------------|
@@ -23,7 +23,7 @@ In short: **Managed Node Group** = AWS manages the EC2 nodes (your worker nodes)
 
 ---
 
-### 🔧 Behind the scenes
+### Behind the scenes
 
 When you define a managed node group:
 - AWS uses a **standard AMI** (like [`Amazon EKS-optimized Linux`](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html)).
@@ -33,7 +33,7 @@ When you define a managed node group:
 
 ---
 
-### 🆚 Self-managed vs Managed Node Groups
+### Self-managed vs Managed Node Groups
 
 | Feature | Managed Node Group | Self-managed Node Group |
 |--------|---------------------|--------------------------|
@@ -45,7 +45,7 @@ When you define a managed node group:
 
 ---
 
-### 🔑 Access the cluster
+### Access the cluster
 
 To update your local `kubeconfig` file and access cluster, run:
 ```bash
@@ -59,7 +59,7 @@ kubectl get no
 
 ---
 
-### 🔍 Inspect the cluster
+### Inspect the cluster
 
 Set the following variables:
 ```bash
@@ -94,7 +94,7 @@ You should see that by default nodes are distributed over multiple subnets in va
 
 ---
 
-### ➕ Add nodes to the cluster
+### Add nodes to the cluster
 
 While working with your cluster, you may need to update your managed node group configuration to add additional nodes to support the needs of your workloads.
 We will be using the `aws eks update-nodegroup-config` command to scale a node group.
@@ -121,7 +121,7 @@ You should see 4 provisioned nodes:
 
 ---
 
-### 🚀 (OPTIONAL) Deploy the sample application 
+### (OPTIONAL) Deploy the sample application 
 
 The sample application models a simple web store application, where customers can browse a catalog, add items to their cart and complete an order through the checkout process.
 
@@ -162,7 +162,7 @@ kubectl delete -f https://github.com/aws-containers/retail-store-sample-app/rele
 
 ---
 
-### ⬆️ Upgrading AMIs
+### Upgrading AMIs
 
 The [Amazon EKS optimized Amazon Linux AMI](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-amis.html) is built on top of Amazon Linux 2, and is configured to serve as the base image for Amazon EKS nodes. It's considered a best practice to use the latest version of the EKS-Optimized AMI when you add nodes to an EKS cluster, as new releases include Kubernetes patches and security updates. It's also important to upgrade existing nodes already provisioned in the EKS cluster.
 
@@ -212,7 +212,23 @@ kubectl get nodes --watch
 
 ---
 
-### 🔗 References
+### (OPTIONAL) Enable Deletion Protection for the Cluster 
+
+You can enable deletion protection for your EKS cluster in order to avoid any accidental deletions. For more information, see [Protect EKS clusters from accidental deletion](https://docs.aws.amazon.com/eks/latest/userguide/deletion-protection.html)
+
+To enable deletion protection:
+```bash
+aws eks update-cluster-config --deletion-protection --name my-eks-cluster
+```
+
+To disable deletion protection:
+```bash
+aws eks update-cluster-config --no-deletion-protection --name my-eks-cluster
+```
+
+---
+
+### References
 
 - [AWS Docs: Simplify node lifecycle with managed node groups](https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html)
 - [Amazon EKS: Best Practices for Reliability](https://docs.aws.amazon.com/eks/latest/best-practices/reliability.html)
